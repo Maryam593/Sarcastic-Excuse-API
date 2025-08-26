@@ -10,6 +10,18 @@ ExcuseAPI.use(bodyParser.json());
 const startServer = async () => {
     console.log('Excuse API server starting...');
 
+    // Welcome route for the base URL
+    ExcuseAPI.get('/', (req, res) => {
+        res.status(200).json({
+            message: "Welcome to the Sarcastic Excuse API!",
+            documentation: "Please see the README on GitHub for API endpoints.",
+            test_endpoints: [
+                "/error/404",
+                "/error/500"
+            ]
+        });
+    });
+
     // GET endpoint: Now dynamic
     ExcuseAPI.get('/error/:code', async (req, res) => {
         const code = Number(req.params.code);
