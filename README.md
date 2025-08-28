@@ -11,6 +11,13 @@ An intelligent API that uses Google's Gemini AI to transform boring HTTP status 
 - **Simple REST Interface**: Easy to integrate with any application.
 - **Flexible Endpoints**: Get excuses by status code or by describing a situation.
 
+## environment Variables
+
+- **GEMINI_API_KEY** : YOUR_API_KEY
+ fill out your api key and you are good to go. But dont hardcode it its not a good practise. make an env and store your secrets there. 
+
+ - Happy Coding :) 
+
 ## Technology Stack
 
 - **Backend**: Node.js, Express.js
