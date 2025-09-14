@@ -14,7 +14,7 @@ async function getSarcasticVersion(originalExcuse) {
     return response.text();
   } catch (error) {
     console.error("Error fetching from Gemini:", error);
-    return `(Gemini refused to rewrite this, it was too boring: ${originalExcuse})`;
+    return `(Gemini refused to rewrite this, it was too boring:) and unethical, like how someone can do that!!  ${originalExcuse})`;
   }
 }
 
