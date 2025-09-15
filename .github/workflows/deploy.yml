@@ -36,6 +36,6 @@ jobs:
         with:
           project: "maryamsaba-sarcastic-e-93"
           entrypoint: "server.js"
-          root: "excuse-api"
-          include: excuse-source.js
+          root: ""
+          
           
